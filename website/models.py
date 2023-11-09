@@ -23,5 +23,5 @@ class MovieCard(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     img = db.Column(db.String(10000))
     #Soring a list might not work, Double Check if errors. Could try db.Column(db.ARRAY(db.String(20)))
-    genre = db.Column(db.PickleType(mutable=True))
+    genre = db.Column(db.ARRAY(db.String(20)))
     rating = db.Column(db.Float)
