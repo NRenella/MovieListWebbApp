@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}Movie View Test{% endblock %}
+
+{% block content %}
+
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+</head>
+<div class="cards">
+    <div class="image">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg">
+    </div>
+    <div class="title">
+        <h1> Title Name </h1>
+    </div>
+</div>
+{% endblock %}
